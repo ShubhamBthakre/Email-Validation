@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+* {
+    font-family: 'Roboto Slab', serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 23px 10px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: rgb(180, 194, 239);
+    
+}
+
+main{
+    min-height: 85vh;
+    padding: 10px;
+}
+
+.container{
+    max-width: 80vw;
+    margin: auto;
+    padding: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.logo img{
+    width: 14px;
+    filter: invert(1);
+}
+
+.logo span{
+    font-size: 20px;
+}
+
+.btn{
+    background-color: black;
+    color: rgb(222, 224, 211);
+    padding: 6px 12px;
+    border-radius: 12px;
+    border: 1px solid white;
+    width: 100px;
+    cursor: pointer;
+}
+
+#resultContainer div::first-letter{
+    text-transform: capitalize;
+
+}
+
+input{
+width: 200px;
+border: 1 px solid black;
+border-radius: 5px;
+padding: 5px 20px;
+margin: 20px 0px ;
+}
+
+@media screen and (max-width:600px){
+    
+    .container{
+        font-size: 12px;
+    }
+    nav{
+        flex-direction: column;
+    }
+
+    .logo{
+        padding: 6px 0px;
+    }
+    .logo img{
+        width: 14px;
+        filter: invert(1);
+    }
+    }
+
